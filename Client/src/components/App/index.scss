@@ -1,0 +1,40 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+@import '~bootstrap/scss/bootstrap';
+@import '../../shared/variables/colors';
+@import '../../shared/variables/values';
+
+.root-container {
+  color: $main-dark-theme-text-color;
+
+  .partial-view-container {
+    padding-top: $header-desktop-height;
+    padding-bottom: 24px;
+    overflow-y: visible;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 0px;
+      flex-direction: column;
+      padding-bottom: $history-title-mobile-pinned-height + 12;
+    }
+  }
+
+  .visible-player {
+    padding-bottom: $player-height + 24;
+
+    &-mobile {
+      padding-bottom: $player-height + $history-title-mobile-pinned-height + 12;
+    }
+  }
+}
+
+a {
+  color: $main-dark-theme-text-color;
+  text-decoration: none;
+}
+
+a:hover { 
+  color: $main-dark-theme-waveform-hovered-bar-color;
+  text-decoration: none;
+}

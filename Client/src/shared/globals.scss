@@ -1,0 +1,43 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+@import './variables/colors';
+@import './variables/fonts';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $main-dark-theme-background-color;
+  font-size: 1rem;
+  font-family: 'Raleway Regular';
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  @include media-breakpoint-down(md) {
+    font-size: 0.88rem;
+  }
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.icon {
+  cursor: pointer;
+
+  &.active {
+    color: $main-dark-theme-link-color !important;
+  }
+}
+
+h4 {
+  letter-spacing: 0.24em;
+}
+
+h5 {
+  letter-spacing: 0.075em;
+}
+
+.light-text {
+  font-family: 'Raleway Extra Light';
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}

@@ -7,3 +7,7 @@ Also could provide background history about track creation process.
 Project participated in the Innovation Sandbox in the Coherent Solutions BY. Took second place.
 Created by team of 5 members: 4 devs & 1 UI/UX.
 Development stopped since found lot of issues with music copyrights, labels etc.
+
+Stack:
+    Backend: Initial version - ASP.NET Core 3. Then migrated to Azure functions + MongoDB
+    Frontend: React + Redux + React Router
